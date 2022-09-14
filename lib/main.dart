@@ -49,17 +49,39 @@ class MyHomePage extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 15.0),
               child: Material(
-                borderRadius: const BorderRadius.all(Radius.circular(16)),
+                borderRadius: const BorderRadius.all(Radius.circular(50)),
                 color: Colors.white,
                 elevation: 8,
                 child: ListTile(
-                  title: const Text(
-                    'Tami Sakita',
+                  leading: Icon(
+                    Icons.phone_android,
+                    color: Colors.teal,
+                  ),
+                  title: Text(
+                    '11 9999-5555',
                     style: TextStyle(
-                      fontFamily: 'Nabla',
-                      color: Colors.pink,
-                      fontSize: 30,
-                      fontWeight: FontWeight.bold,
+                      color: Colors.teal,
+                    ),
+                  ),
+                ),
+              ),
+            ),
+            SizedBox(height: 16),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 15.0),
+              child: Material(
+                borderRadius: const BorderRadius.all(Radius.circular(50)),
+                color: Colors.white,
+                elevation: 8,
+                child: ListTile(
+                  leading: Icon(
+                    Icons.email_outlined,
+                    color: Colors.teal,
+                  ),
+                  title: Text(
+                    'email@gmail.com',
+                    style: TextStyle(
+                      color: Colors.teal,
                     ),
                   ),
                 ),
