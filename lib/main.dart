@@ -26,10 +26,27 @@ class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.lightGreen,
       body: SafeArea(
-        child: Column(
+        child:
+        Column(
           children: [
-            Image(image: AssetImage('assets/images/paisagem.jpg'))
+            CircleAvatar(
+                backgroundImage: NetworkImage(
+                    'https://miro.medium.com/max/1400/0*vowtRZE_wvyVA7CB'),
+                radius: 70
+            ),
+            Container(
+              child: const Text(
+                'Tami Sakita',
+                style: TextStyle(
+                  fontFamily: 'Nabla',
+                  color: Colors.pink,
+                  fontSize: 30,
+                  fontWeight: FontWeight.bold,
+                ),
+              )
+            ),
           ],
         ),
       ),
