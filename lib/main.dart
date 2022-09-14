@@ -28,24 +28,42 @@ class MyHomePage extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.lightGreen,
       body: SafeArea(
-        child:
-        Column(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            CircleAvatar(
+            const CircleAvatar(
                 backgroundImage: NetworkImage(
                     'https://miro.medium.com/max/1400/0*vowtRZE_wvyVA7CB'),
-                radius: 70
+                radius: 70),
+            SizedBox(height: 16),
+            const Text(
+              'Tami Sakita',
+              style: TextStyle(
+                fontFamily: 'Nabla',
+                color: Colors.pink,
+                fontSize: 30,
+                fontWeight: FontWeight.bold,
+              ),
             ),
-            Container(
-              child: const Text(
-                'Tami Sakita',
-                style: TextStyle(
-                  fontFamily: 'Nabla',
-                  color: Colors.pink,
-                  fontSize: 30,
-                  fontWeight: FontWeight.bold,
+            SizedBox(height: 16),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 15.0),
+              child: Material(
+                borderRadius: const BorderRadius.all(Radius.circular(16)),
+                color: Colors.white,
+                elevation: 8,
+                child: ListTile(
+                  title: const Text(
+                    'Tami Sakita',
+                    style: TextStyle(
+                      fontFamily: 'Nabla',
+                      color: Colors.pink,
+                      fontSize: 30,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
                 ),
-              )
+              ),
             ),
           ],
         ),
