@@ -29,16 +29,6 @@ class MyHomePage extends StatelessWidget {
       body: SafeArea(
         child: Column(
           children: [
-            // CircleAvatar(
-            //   backgroundImage: NetworkImage(
-            //       'https://img.elo7.com.br/product/zoom/1EE4BCF/big-poster-anime-sakura-card-captors-tamanho-90x-0-cm-lo18-quadro.jpg'),
-            // ),
-            //Image.network('https://img.elo7.com.br/product/zoom/1EE4BCF/big-poster-anime-sakura-card-captors-tamanho-90x-0-cm-lo18-quadro.jpg')
-            // Image(
-            //     height: 100,
-            //     image: NetworkImage(
-            //         'https://img.elo7.com.br/product/zoom/1EE4BCF/big-poster-anime-sakura-card-captors-tamanho-90x-0-cm-lo18-quadro.jpg'))
-            // Image.asset('assets/images/sakura.jpeg')
             Image(image: AssetImage('assets/images/paisagem.jpg'))
           ],
         ),
