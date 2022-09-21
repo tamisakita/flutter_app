@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app/screens/personal_card_screen.dart';
 
 import '../componentes/rounded_button.dart';
 
 class MenuScreen extends StatelessWidget {
+  static const String id = 'menu_screen';
+
   const MenuScreen({Key? key}) : super(key: key);
 
   @override
@@ -17,7 +20,7 @@ class MenuScreen extends StatelessWidget {
             children: [
               SizedBox(height: 16),
               const Text(
-                'Menu inicial',
+                'Menu',
                 style: TextStyle(
                   fontFamily: 'Nabla',
                   color: Colors.pink,
@@ -29,7 +32,12 @@ class MenuScreen extends StatelessWidget {
               RoundedButton(
                 icon: Icons.person,
                 text: 'Cartão pessoal',
-                onTap: () {},
+                onTap: () {
+                  Navigator.pushNamed(
+                    context,
+                    PersonalCardScreen.id,
+                  );
+                },
               )
             ],
           ),
